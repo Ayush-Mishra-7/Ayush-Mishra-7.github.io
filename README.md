@@ -1,2 +1,2 @@
-# Ayus-Mishra-7.github.io
+# Ayush-Mishra-7.github.io
  Website
