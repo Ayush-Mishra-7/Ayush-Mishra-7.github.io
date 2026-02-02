@@ -3,10 +3,10 @@ const autoprefixer = require("gulp-autoprefixer");
 const browsersync = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
 const gulp = require("gulp");
-const header = require("gulp-header");
+const insert = require('gulp-insert');
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
-const sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('sass'));
 const uglify = require("gulp-uglify");
 const pkg = require('./package.json');
 
@@ -66,9 +66,7 @@ function css() {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(header(banner, {
-      pkg: pkg
-    }))
+    .pipe(insert.prepend(banner))
     .pipe(gulp.dest("./css"))
     .pipe(rename({
       suffix: ".min"
@@ -88,9 +86,7 @@ function js() {
       '!./js/jqBootstrapValidation.js'
     ])
     .pipe(uglify())
-    .pipe(header(banner, {
-      pkg: pkg
-    }))
+    .pipe(insert.prepend(banner))
     .pipe(rename({
       suffix: '.min'
     }))
