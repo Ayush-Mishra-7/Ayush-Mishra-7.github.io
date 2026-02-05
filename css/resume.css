@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Resume v5.0.3 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2026 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)
+ * Copyright 2013-2026 <%= pkg.author %>
+ * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)
  */
 
 body {
@@ -179,4 +179,480 @@ a {
 }
 a:hover, a:focus, a:active {
   color: rgb(129.9857142857, 63.9612244898, 38.5142857143);
+}
+
+.chess-card-link {
+  text-decoration: none !important;
+}
+
+.chess-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  min-height: 120px;
+}
+
+.chess-card:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.lichess-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+  border: 2px solid #333;
+  color: #333;
+}
+
+.lichess-card:hover {
+  background: linear-gradient(135deg, #333 0%, #1a1a1a 100%);
+  color: #fff;
+}
+
+.chesscom-card {
+  background: linear-gradient(135deg, #769656 0%, #5a8034 100%);
+  color: #fff;
+}
+
+.chesscom-card:hover {
+  background: linear-gradient(135deg, #5a8034 0%, #4a6b2a 100%);
+}
+
+.chess-card-icon {
+  margin-right: 1.5rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.chess-card-icon svg {
+  display: block;
+}
+
+.chess-card-content {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.chess-card-title {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+}
+
+.chess-card-username {
+  margin: 0 0 0.5rem 0;
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.chess-card-cta {
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.blog-card-link {
+  text-decoration: none !important;
+}
+
+.blog-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 12px 30px rgba(189, 93, 56, 0.15);
+  box-shadow: 0 12px 30px rgba(189, 93, 56, 0.15);
+  border-color: #BD5D38;
+}
+
+.blog-card-header {
+  margin-bottom: 0.75rem;
+}
+
+.blog-category {
+  background: linear-gradient(135deg, #BD5D38 0%, rgb(211.9142857143, 138.0530612245, 109.5857142857) 100%);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.blog-card-title {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #343a40;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+  text-transform: none;
+}
+
+.blog-card-excerpt {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.blog-card-cta {
+  color: #BD5D38;
+  font-weight: 600;
+  font-size: 0.9rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.blog-card:hover .blog-card-cta {
+  color: rgb(149.6571428571, 73.6408163265, 44.3428571429);
+}
+
+.btn-outline-primary {
+  border-color: #BD5D38;
+  color: #BD5D38;
+}
+
+.btn-outline-primary:hover {
+  background-color: #BD5D38;
+  border-color: #BD5D38;
+  color: #fff;
+}
+
+.chess-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #BD5D38;
+}
+
+@media (max-width: 768px) {
+  .chess-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.chess-stat-item {
+  text-align: center;
+}
+
+.chess-stat-number {
+  display: block;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #BD5D38;
+  line-height: 1.2;
+}
+
+.chess-stat-label {
+  font-size: 0.85rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.chess-rating-badges {
+  margin: 0.5rem 0;
+}
+
+.rating-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.lichess-card .rating-badge {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.lichess-card:hover .rating-badge {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.featured-game-link {
+  text-decoration: none !important;
+}
+
+.featured-game-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem;
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.featured-game-card:hover {
+  border-color: #BD5D38;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 8px 20px rgba(189, 93, 56, 0.15);
+  box-shadow: 0 8px 20px rgba(189, 93, 56, 0.15);
+}
+
+.featured-game-card i {
+  font-size: 1.75rem;
+  color: #BD5D38;
+  margin-bottom: 0.5rem;
+}
+
+.featured-game-card span {
+  font-weight: 600;
+  color: #343a40;
+  font-size: 0.95rem;
+}
+
+.featured-game-card small {
+  color: #6c757d;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.current-work-badge {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f9f0 0%, #e8f5e9 100%);
+  border: 1px solid #4caf50;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.badge-pulse {
+  width: 10px;
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
+.badge-text {
+  color: #2e7d32;
+}
+
+.skill-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #495057;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background: #e9ecef;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.skill-tag.primary {
+  background: linear-gradient(135deg, #BD5D38 0%, rgb(211.9142857143, 138.0530612245, 109.5857142857) 100%);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+
+.skill-tag.primary:hover {
+  background: linear-gradient(135deg, rgb(169.3285714286, 83.3204081633, 50.1714285714) 0%, #BD5D38 100%);
+}
+
+.project-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: 100%;
+  border: 1px solid #e9ecef;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-color: #BD5D38;
+}
+
+.project-card.featured {
+  border: 2px solid #BD5D38;
+  background: linear-gradient(145deg, #fff9f7 0%, #fff5f2 100%);
+}
+
+.project-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-title {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 0.25rem;
+  text-transform: none;
+}
+
+.project-org {
+  color: #BD5D38;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-desc {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tech span {
+  background: #e9ecef;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  color: #495057;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #BD5D38 0%, rgb(211.9142857143, 138.0530612245, 109.5857142857) 100%);
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, rgb(169.3285714286, 83.3204081633, 50.1714285714) 0%, #BD5D38 100%);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  -webkit-box-shadow: 0 4px 12px rgba(189, 93, 56, 0.3);
+  box-shadow: 0 4px 12px rgba(189, 93, 56, 0.3);
+}
+
+@media (max-width: 768px) {
+  .current-work-badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .project-title {
+    font-size: 1.2rem;
+  }
 }
