@@ -419,3 +419,190 @@
         font-size: 1.2rem;
     }
 }
+
+/* Dark Mode Toggle */
+.theme-switch-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+#theme-toggle {
+    background-color: $primary;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0;
+
+    // Headings
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .subheading {
+        color: #f8f9fa !important;
+    }
+
+    .text-primary {
+        color: lighten($primary, 10%) !important;
+    }
+
+    // Sidebar
+    #sideNav {
+        background-color: darken($primary, 20%) !important;
+    }
+
+    // Links
+    a {
+        color: lighten($primary, 10%);
+
+        &:hover {
+            color: lighten($primary, 20%);
+        }
+    }
+
+    // Cards (Resume Items, Project, Blog, etc)
+    .resume-item,
+    .project-card,
+    .blog-card,
+    .chess-card,
+    .featured-game-card {
+        background: #1e1e1e !important; // Override gradients
+        border-color: #333;
+
+        // Text inside cards
+        .project-title,
+        .blog-card-title,
+        .chess-card-title,
+        .featured-game-card span,
+        h3.mb-0 {
+            color: #f1f1f1 !important;
+        }
+
+        p,
+        .project-desc,
+        .blog-card-excerpt,
+        .chess-stat-label,
+        small,
+        .resume-content,
+        .resume-date {
+            color: #aaa;
+        }
+
+        &:hover {
+            border-color: lighten($primary, 10%);
+            background: #252525 !important;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    // Specific Card updates
+    .chess-stats-grid {
+        background: #1e1e1e;
+        border-left: 4px solid lighten($primary, 10%);
+
+        .chess-stat-number {
+            color: lighten($primary, 10%);
+        }
+    }
+
+    .skill-tag {
+        background: #2d2d2d;
+        border-color: #444;
+        color: #ccc;
+
+        &:hover {
+            background: #3d3d3d;
+        }
+
+        &.primary {
+            background: linear-gradient(135deg, darken($primary, 10%) 0%, $primary 100%);
+            color: #fff;
+            border: none;
+        }
+    }
+
+    // Badges
+    .current-work-badge {
+        background: rgba(76, 175, 80, 0.1);
+        border-color: #2e7d32;
+
+        .badge-text {
+            color: #66bb6a;
+        }
+    }
+
+    .project-tech span {
+        background-color: #333;
+        color: #ccc;
+    }
+
+    // Social Icons
+    .social-icons a {
+        background-color: #333;
+
+        &:hover {
+            background-color: lighten($primary, 10%);
+        }
+    }
+
+    // Hr
+    hr {
+        border-top-color: #333;
+    }
+
+    // Scrollbar
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1e1e1e;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #888;
+    }
+
+    // Inputs/Forms if any (future proofing)
+    input,
+    textarea,
+    select {
+        background-color: #1e1e1e;
+        color: #f1f1f1;
+        border: 1px solid #333;
+
+        &:focus {
+            background-color: #252525;
+            color: #fff;
+            border-color: $primary;
+        }
+    }
+}

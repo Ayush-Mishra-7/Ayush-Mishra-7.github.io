@@ -656,3 +656,216 @@ a:hover, a:focus, a:active {
     font-size: 1.2rem;
   }
 }
+/* Dark Mode Toggle */
+.theme-switch-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#theme-toggle {
+  background-color: #BD5D38;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#theme-toggle:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode .subheading {
+  color: #f8f9fa !important;
+}
+body.dark-mode .text-primary {
+  color: rgb(206.0857142857, 122.2326530612, 89.9142857143) !important;
+}
+body.dark-mode #sideNav {
+  background-color: rgb(110.3142857143, 54.2816326531, 32.6857142857) !important;
+}
+body.dark-mode a {
+  color: rgb(206.0857142857, 122.2326530612, 89.9142857143);
+}
+body.dark-mode a:hover {
+  color: rgb(217.7428571429, 153.8734693878, 129.2571428571);
+}
+body.dark-mode .resume-item,
+body.dark-mode .project-card,
+body.dark-mode .blog-card,
+body.dark-mode .chess-card,
+body.dark-mode .featured-game-card {
+  background: #1e1e1e !important;
+  border-color: #333;
+}
+body.dark-mode .resume-item .project-title,
+body.dark-mode .resume-item .blog-card-title,
+body.dark-mode .resume-item .chess-card-title,
+body.dark-mode .resume-item .featured-game-card span,
+body.dark-mode .resume-item h3.mb-0,
+body.dark-mode .project-card .project-title,
+body.dark-mode .project-card .blog-card-title,
+body.dark-mode .project-card .chess-card-title,
+body.dark-mode .project-card .featured-game-card span,
+body.dark-mode .project-card h3.mb-0,
+body.dark-mode .blog-card .project-title,
+body.dark-mode .blog-card .blog-card-title,
+body.dark-mode .blog-card .chess-card-title,
+body.dark-mode .blog-card .featured-game-card span,
+body.dark-mode .blog-card h3.mb-0,
+body.dark-mode .chess-card .project-title,
+body.dark-mode .chess-card .blog-card-title,
+body.dark-mode .chess-card .chess-card-title,
+body.dark-mode .chess-card .featured-game-card span,
+body.dark-mode .chess-card h3.mb-0,
+body.dark-mode .featured-game-card .project-title,
+body.dark-mode .featured-game-card .blog-card-title,
+body.dark-mode .featured-game-card .chess-card-title,
+body.dark-mode .featured-game-card .featured-game-card span,
+body.dark-mode .featured-game-card h3.mb-0 {
+  color: #f1f1f1 !important;
+}
+body.dark-mode .resume-item p,
+body.dark-mode .resume-item .project-desc,
+body.dark-mode .resume-item .blog-card-excerpt,
+body.dark-mode .resume-item .chess-stat-label,
+body.dark-mode .resume-item small,
+body.dark-mode .resume-item .resume-content,
+body.dark-mode .resume-item .resume-date,
+body.dark-mode .project-card p,
+body.dark-mode .project-card .project-desc,
+body.dark-mode .project-card .blog-card-excerpt,
+body.dark-mode .project-card .chess-stat-label,
+body.dark-mode .project-card small,
+body.dark-mode .project-card .resume-content,
+body.dark-mode .project-card .resume-date,
+body.dark-mode .blog-card p,
+body.dark-mode .blog-card .project-desc,
+body.dark-mode .blog-card .blog-card-excerpt,
+body.dark-mode .blog-card .chess-stat-label,
+body.dark-mode .blog-card small,
+body.dark-mode .blog-card .resume-content,
+body.dark-mode .blog-card .resume-date,
+body.dark-mode .chess-card p,
+body.dark-mode .chess-card .project-desc,
+body.dark-mode .chess-card .blog-card-excerpt,
+body.dark-mode .chess-card .chess-stat-label,
+body.dark-mode .chess-card small,
+body.dark-mode .chess-card .resume-content,
+body.dark-mode .chess-card .resume-date,
+body.dark-mode .featured-game-card p,
+body.dark-mode .featured-game-card .project-desc,
+body.dark-mode .featured-game-card .blog-card-excerpt,
+body.dark-mode .featured-game-card .chess-stat-label,
+body.dark-mode .featured-game-card small,
+body.dark-mode .featured-game-card .resume-content,
+body.dark-mode .featured-game-card .resume-date {
+  color: #aaa;
+}
+body.dark-mode .resume-item:hover,
+body.dark-mode .project-card:hover,
+body.dark-mode .blog-card:hover,
+body.dark-mode .chess-card:hover,
+body.dark-mode .featured-game-card:hover {
+  border-color: rgb(206.0857142857, 122.2326530612, 89.9142857143);
+  background: #252525 !important;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+body.dark-mode .chess-stats-grid {
+  background: #1e1e1e;
+  border-left: 4px solid rgb(206.0857142857, 122.2326530612, 89.9142857143);
+}
+body.dark-mode .chess-stats-grid .chess-stat-number {
+  color: rgb(206.0857142857, 122.2326530612, 89.9142857143);
+}
+body.dark-mode .skill-tag {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #ccc;
+}
+body.dark-mode .skill-tag:hover {
+  background: #3d3d3d;
+}
+body.dark-mode .skill-tag.primary {
+  background: linear-gradient(135deg, rgb(149.6571428571, 73.6408163265, 44.3428571429) 0%, #BD5D38 100%);
+  color: #fff;
+  border: none;
+}
+body.dark-mode .current-work-badge {
+  background: rgba(76, 175, 80, 0.1);
+  border-color: #2e7d32;
+}
+body.dark-mode .current-work-badge .badge-text {
+  color: #66bb6a;
+}
+body.dark-mode .project-tech span {
+  background-color: #333;
+  color: #ccc;
+}
+body.dark-mode .social-icons a {
+  background-color: #333;
+}
+body.dark-mode .social-icons a:hover {
+  background-color: rgb(206.0857142857, 122.2326530612, 89.9142857143);
+}
+body.dark-mode hr {
+  border-top-color: #333;
+}
+body.dark-mode ::-webkit-scrollbar {
+  width: 12px;
+}
+body.dark-mode ::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 6px;
+}
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border: 1px solid #333;
+}
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+  background-color: #252525;
+  color: #fff;
+  border-color: #BD5D38;
+}
