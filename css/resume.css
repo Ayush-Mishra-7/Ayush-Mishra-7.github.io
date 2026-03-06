@@ -148,6 +148,24 @@ section.resume-section {
   padding-bottom: 5rem !important;
   max-width: 75rem;
 }
+section.resume-section .resume-item {
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  padding: 2rem !important;
+  margin-bottom: 1.5rem !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+section.resume-section .resume-item:hover {
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border-color: #BD5D38;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
@@ -720,19 +738,49 @@ body.dark-mode a {
 body.dark-mode a:hover {
   color: rgb(217.7428571429, 153.8734693878, 129.2571428571);
 }
-body.dark-mode .resume-item,
-body.dark-mode .project-card,
-body.dark-mode .blog-card,
-body.dark-mode .chess-card,
-body.dark-mode .featured-game-card {
-  background: #1e1e1e !important;
-  border-color: #333;
+body.dark-mode .resume-item {
+  background: linear-gradient(145deg, #1e1e1e 0%, #252525 100%) !important;
+  border: 1px solid #404040 !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  margin-bottom: 1.5rem !important;
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
 }
 body.dark-mode .resume-item .project-title,
 body.dark-mode .resume-item .blog-card-title,
 body.dark-mode .resume-item .chess-card-title,
 body.dark-mode .resume-item .featured-game-card span,
-body.dark-mode .resume-item h3.mb-0,
+body.dark-mode .resume-item h3.mb-0 {
+  color: #f1f1f1 !important;
+}
+body.dark-mode .resume-item p,
+body.dark-mode .resume-item .project-desc,
+body.dark-mode .resume-item .blog-card-excerpt,
+body.dark-mode .resume-item .chess-stat-label,
+body.dark-mode .resume-item small,
+body.dark-mode .resume-item .resume-content,
+body.dark-mode .resume-item .resume-date {
+  color: #aaa;
+}
+body.dark-mode .resume-item:hover {
+  border-color: rgb(206.0857142857, 122.2326530612, 89.9142857143) !important;
+  -webkit-box-shadow: 0 8px 25px rgba(189, 93, 56, 0.25) !important;
+  box-shadow: 0 8px 25px rgba(189, 93, 56, 0.25) !important;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+body.dark-mode .project-card,
+body.dark-mode .blog-card,
+body.dark-mode .chess-card,
+body.dark-mode .featured-game-card {
+  background: linear-gradient(145deg, #1e1e1e 0%, #252525 100%) !important;
+  border: 1px solid #404040 !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+}
 body.dark-mode .project-card .project-title,
 body.dark-mode .project-card .blog-card-title,
 body.dark-mode .project-card .chess-card-title,
@@ -755,13 +803,6 @@ body.dark-mode .featured-game-card .featured-game-card span,
 body.dark-mode .featured-game-card h3.mb-0 {
   color: #f1f1f1 !important;
 }
-body.dark-mode .resume-item p,
-body.dark-mode .resume-item .project-desc,
-body.dark-mode .resume-item .blog-card-excerpt,
-body.dark-mode .resume-item .chess-stat-label,
-body.dark-mode .resume-item small,
-body.dark-mode .resume-item .resume-content,
-body.dark-mode .resume-item .resume-date,
 body.dark-mode .project-card p,
 body.dark-mode .project-card .project-desc,
 body.dark-mode .project-card .blog-card-excerpt,
@@ -792,15 +833,15 @@ body.dark-mode .featured-game-card .resume-content,
 body.dark-mode .featured-game-card .resume-date {
   color: #aaa;
 }
-body.dark-mode .resume-item:hover,
 body.dark-mode .project-card:hover,
 body.dark-mode .blog-card:hover,
 body.dark-mode .chess-card:hover,
 body.dark-mode .featured-game-card:hover {
-  border-color: rgb(206.0857142857, 122.2326530612, 89.9142857143);
-  background: #252525 !important;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-color: rgb(206.0857142857, 122.2326530612, 89.9142857143) !important;
+  -webkit-box-shadow: 0 8px 25px rgba(189, 93, 56, 0.25) !important;
+  box-shadow: 0 8px 25px rgba(189, 93, 56, 0.25) !important;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 body.dark-mode .chess-stats-grid {
   background: #1e1e1e;
@@ -832,6 +873,32 @@ body.dark-mode .current-work-badge .badge-text {
 body.dark-mode .project-tech span {
   background-color: #333;
   color: #ccc;
+}
+body.dark-mode .btn-primary {
+  background: linear-gradient(135deg, #BD5D38 0%, rgb(206.0857142857, 122.2326530612, 89.9142857143) 100%) !important;
+  border: none !important;
+  color: #fff !important;
+  -webkit-box-shadow: 0 4px 12px rgba(189, 93, 56, 0.4) !important;
+  box-shadow: 0 4px 12px rgba(189, 93, 56, 0.4) !important;
+}
+body.dark-mode .btn-primary:hover {
+  background: linear-gradient(135deg, rgb(200.2571428571, 106.412244898, 70.2428571429) 0%, rgb(211.9142857143, 138.0530612245, 109.5857142857) 100%) !important;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  -webkit-box-shadow: 0 6px 16px rgba(189, 93, 56, 0.5) !important;
+  box-shadow: 0 6px 16px rgba(189, 93, 56, 0.5) !important;
+}
+body.dark-mode .btn-outline-primary {
+  border-color: rgb(206.0857142857, 122.2326530612, 89.9142857143) !important;
+  color: rgb(206.0857142857, 122.2326530612, 89.9142857143) !important;
+  background: transparent !important;
+}
+body.dark-mode .btn-outline-primary:hover {
+  background: rgb(206.0857142857, 122.2326530612, 89.9142857143) !important;
+  border-color: rgb(206.0857142857, 122.2326530612, 89.9142857143) !important;
+  color: #fff !important;
+  -webkit-box-shadow: 0 4px 12px rgba(189, 93, 56, 0.4);
+  box-shadow: 0 4px 12px rgba(189, 93, 56, 0.4);
 }
 body.dark-mode .social-icons a {
   background-color: #333;

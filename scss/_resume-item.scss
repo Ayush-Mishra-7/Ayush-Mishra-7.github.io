@@ -3,6 +3,20 @@ section.resume-section {
   padding-bottom: 5rem !important;
   max-width: 75rem;
   .resume-item {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+    padding: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    
+    &:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      border-color: $primary;
+      transform: translateY(-2px);
+    }
+    
     .resume-content {}
     .resume-date {
       min-width: none;

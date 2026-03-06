@@ -484,13 +484,13 @@ body.dark-mode {
     }
 
     // Cards (Resume Items, Project, Blog, etc)
-    .resume-item,
-    .project-card,
-    .blog-card,
-    .chess-card,
-    .featured-game-card {
-        background: #1e1e1e !important; // Override gradients
-        border-color: #333;
+    .resume-item {
+        background: linear-gradient(145deg, #1e1e1e 0%, #252525 100%) !important;
+        border: 1px solid #404040 !important;
+        border-radius: 16px !important;
+        padding: 2rem !important;
+        margin-bottom: 1.5rem !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
 
         // Text inside cards
         .project-title,
@@ -512,9 +512,45 @@ body.dark-mode {
         }
 
         &:hover {
-            border-color: lighten($primary, 10%);
-            background: #252525 !important;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            border-color: lighten($primary, 10%) !important;
+            box-shadow: 0 8px 25px rgba(189, 93, 56, 0.25) !important;
+            transform: translateY(-3px);
+        }
+    }
+    
+    .project-card,
+    .blog-card,
+    .chess-card,
+    .featured-game-card {
+        background: linear-gradient(145deg, #1e1e1e 0%, #252525 100%) !important;
+        border: 1px solid #404040 !important;
+        border-radius: 12px !important;
+        padding: 1.5rem !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+
+        // Text inside cards
+        .project-title,
+        .blog-card-title,
+        .chess-card-title,
+        .featured-game-card span,
+        h3.mb-0 {
+            color: #f1f1f1 !important;
+        }
+
+        p,
+        .project-desc,
+        .blog-card-excerpt,
+        .chess-stat-label,
+        small,
+        .resume-content,
+        .resume-date {
+            color: #aaa;
+        }
+
+        &:hover {
+            border-color: lighten($primary, 10%) !important;
+            box-shadow: 0 8px 25px rgba(189, 93, 56, 0.25) !important;
+            transform: translateY(-3px);
         }
     }
 
@@ -557,6 +593,33 @@ body.dark-mode {
     .project-tech span {
         background-color: #333;
         color: #ccc;
+    }
+
+    // Buttons
+    .btn-primary {
+        background: linear-gradient(135deg, $primary 0%, lighten($primary, 10%) 100%) !important;
+        border: none !important;
+        color: #fff !important;
+        box-shadow: 0 4px 12px rgba(189, 93, 56, 0.4) !important;
+
+        &:hover {
+            background: linear-gradient(135deg, lighten($primary, 5%) 0%, lighten($primary, 15%) 100%) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(189, 93, 56, 0.5) !important;
+        }
+    }
+
+    .btn-outline-primary {
+        border-color: lighten($primary, 10%) !important;
+        color: lighten($primary, 10%) !important;
+        background: transparent !important;
+
+        &:hover {
+            background: lighten($primary, 10%) !important;
+            border-color: lighten($primary, 10%) !important;
+            color: #fff !important;
+            box-shadow: 0 4px 12px rgba(189, 93, 56, 0.4);
+        }
     }
 
     // Social Icons
