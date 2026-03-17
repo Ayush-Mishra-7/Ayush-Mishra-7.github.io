@@ -88,6 +88,25 @@ p.lead {
   outline-color: rgb(211.9142857143, 138.0530612245, 109.5857142857);
 }
 
+.profile-photo {
+  display: block;
+  object-fit: cover;
+  object-position: center 10%;
+  border-radius: 50%;
+}
+
+.profile-photo-desktop {
+  width: 10rem;
+  height: 10rem;
+}
+
+.profile-photo-mobile {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border: 4px solid #bd5d38;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
@@ -112,8 +131,8 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: none;
+    max-height: none;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
